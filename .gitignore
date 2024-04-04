@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.eslint.cjs
+*.config.json
+*.config.ts
