@@ -1,8 +1,8 @@
 function Contacts() {
   return (
-    <div className="my-0 mx-16 md:my-[-2rem]  md:mx-12 md:px-[6rem] mb-[5vh] md:mb-[10vh] lg:my-[-2rem] lg:mb-[9vh] lg:px-[8rem] xl:px-[10rem] xl:my-[-3rem] xl:mb-[7vh] 2xl:px-[18rem]">
+    <div className="my-0 mx-16 md:my-[-2rem]  md:mx-12 md:px-[6rem] mb-[5vh] md:mb-[10vh] lg:my-[-2rem] lg:mb-[8vh] lg:px-[8rem] xl:px-[10rem] xl:my-[-3rem] xl:mb-[7vh] 2xl:px-[18rem]">
       <h1 className="text-5xl font-bold text-center mb-8 lg:text-[3.5rem] lg:mb-10 xl:text-[4rem] xl:mb-16">
-        Let's talk!
+        Connect with me
       </h1>
       <div className="flex justify-between mb-8 md:justify-around">
         <a
@@ -22,7 +22,11 @@ function Contacts() {
       <div className="w-full h-[1px] bg-active flex justify-center relative mb-12">
         <div className="w-[20px] h-[20px] bg-primary absolute top-[-10px] rounded-full"></div>
       </div>
-      <form className="flex flex-col gap-4 xl:px-[6rem]">
+      <form
+        action="https://getform.io/f/panvxwda"
+        method="POST"
+        className="flex flex-col gap-4 xl:px-[6rem]"
+      >
         <div className="flex flex-col gap-2">
           <label htmlFor="name">
             What's your name? <span className="text-red-500">*</span>
@@ -32,6 +36,7 @@ function Contacts() {
             type="text"
             name="name"
             id="name"
+            placeholder="Enter your name"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -43,6 +48,7 @@ function Contacts() {
             type="text"
             name="email"
             id="email"
+            placeholder="Enter your email"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -54,6 +60,7 @@ function Contacts() {
             type="text"
             name="number"
             id="number"
+            placeholder="Enter your number"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -64,10 +71,11 @@ function Contacts() {
             className="bg-slate-400 p-2 bg-opacity-10 rounded-md resize-none h-[8rem] focus:outline-none  focus:border-primary focus:border-solid focus:border-[1px]"
             name="message"
             id="message"
+            placeholder="Enter your message here!"
           ></textarea>
         </div>
         <div>
-          <button className="rounded bg-neutral-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-50 shadow-dark-3 transition duration-150 ease-in-out hover:bg-neutral-700 hover:shadow-dark-2 focus:bg-neutral-700 focus:shadow-dark-2 focus:outline-none focus:ring-0 active:bg-neutral-900 active:shadow-dark-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+          <button className="bg-black rounded-md text-white py-2 px-4 uppercase text-[.8rem] hover:opacity-[.7] duration-300 hover:animate-pulse hover:scale-110">
             Submit
           </button>
         </div>

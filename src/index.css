@@ -12,7 +12,7 @@ body {
 
 .show {
   display: block;
-  animation: MobileNavSlideIn 0.6s ease forwards;
+  animation: MobileNavSlideIn 0.6s ease-in-out forwards;
 }
 
 @keyframes MobileNavSlideIn {
