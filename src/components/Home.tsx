@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Download } from "lucide-react";
+import { Download, MessageSquareMore } from "lucide-react";
 
 function Home() {
   const [text, setText] = useState("");
@@ -60,6 +60,11 @@ function Home() {
             Explore My Journey
           </Link>
         </div>
+      </div>
+      <div className="flex justify-center absolute right-20 bottom-32 items-center bg-[#c2c2c1] p-[1rem] rounded-full">
+        <Link to={"/contacts"}>
+          <MessageSquareMore className="w-[2rem] h-[2rem] text-active hover:text-[#494545] duration-200 cursor-pointer hover:animate-pulse hover:w-[2.25rem] hover:h-[2.25rem]" />
+        </Link>
       </div>
     </>
   );

@@ -101,7 +101,7 @@ function Nav() {
       </nav>
       {/* Menu for mobile view */}
       {showMenu && (
-        <div className="md:hidden">
+        <div className={`md:hidden mb-8 ${showMenu ? "show" : ""}`}>
           <Link to="/">
             <p
               className={`block mb-2 text-3xl border-b mx-12 py-3 ${
