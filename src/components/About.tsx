@@ -1,5 +1,12 @@
+import FloatingContact from "./FloatingContact";
+
 function About() {
-  return <div>About</div>;
+  return (
+    <div>
+      <p>About</p>
+      <FloatingContact />
+    </div>
+  );
 }
 
 export default About;

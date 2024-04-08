@@ -22,7 +22,6 @@ function Nav() {
     <>
       <nav className="flex justify-between mb-4 mt-6 mx-12 xl:mx-24 ">
         <div className="flex items-center">
-          {/* <p className="text-5xl font-bold">Ian Pinili</p> */}
           <img src={Logo} alt="Logo" className="w-52 h-52" />
         </div>
         <div className="flex my-3 items-center">

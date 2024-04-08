@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Download, MessageSquareMore } from "lucide-react";
+import { Download } from "lucide-react";
+import FloatingContact from "./FloatingContact";
 
 function Home() {
   const [text, setText] = useState("");
@@ -27,17 +28,17 @@ function Home() {
 
   return (
     <>
-      <div className="flex flex-col items-start mx-16 md:mx-12 md:px-[6rem] xl:mx-auto xl:px-[20rem] my-12 mb-[30vh]">
-        <p className="text-sm text-primary md:text-base xl:text-xl">
+      <div className="flex flex-col items-start mx-16 md:mx-12 md:px-[6rem] xl:mx-auto xl:px-[18rem] 2xl:px-[22rem] my-12 mb-[20rem] fade-in">
+        <p className="text-[.8rem] text-primary md:text-base xl:text-xl">
           Hi, my name is
         </p>
-        <p className="text-4xl my-1 font-bold md:text-5xl xl:text-7xl">
+        <p className="text-3xl mt-1 mb-0 md:my-2 font-bold md:text-5xl xl:text-7xl">
           Ian Pinili
         </p>
-        <p className="text-4xl text-[#494545] font-bold md:text-5xl xl:text-7xl">
+        <p className="text-3xl text-[#494545] font-bold md:text-5xl xl:text-7xl">
           {text}&nbsp;
         </p>
-        <p className="text-lg my-2  md:mx-0 xl:text-xl">
+        <p className="text-[1rem] mb-5 mt-2 md:my-2  md:mx-0 xl:text-xl">
           I am a Web Developer based in Vancouver with a passion for creating
           exceptional digital experiences. From sleek designs to robust
           functionality, I specialize in crafting websites that exceed
@@ -48,24 +49,20 @@ function Home() {
           <a
             href="../../public/ian-pinili-resume.pdf"
             download="ian-pinili-resume.pdf"
-            className="bg-primary hover:bg-[#494545] text-white font-bold py-2 px-4 rounded-full md:py-4 md:px-6 duration-200 flex gap-4"
+            className="bg-primary hover:bg-[#494545] text-white font-bold py-2 px-4 text-center rounded-full md:py-4 md:px-6 duration-200 flex gap-4"
           >
             Download CV
             <Download className="hover:animate-bounce" />
           </a>
           <Link
             to="/about"
-            className="bg-[black] hover:bg-[#494545] text-white font-bold py-2 px-4 rounded-full md:py-4 md:px-6 duration-200"
+            className="bg-[black] hover:bg-[#494545] text-white font-bold py-2 px-4 text-center rounded-full md:py-4 md:px-6 duration-200"
           >
             Explore My Journey
           </Link>
         </div>
       </div>
-      <div className="flex justify-center absolute right-20 bottom-32 items-center bg-[#c2c2c1] p-[1rem] rounded-full">
-        <Link to={"/contacts"}>
-          <MessageSquareMore className="w-[2rem] h-[2rem] text-active hover:text-[#494545] duration-200 cursor-pointer hover:animate-pulse hover:w-[2.25rem] hover:h-[2.25rem]" />
-        </Link>
-      </div>
+      <FloatingContact />
     </>
   );
 }
