@@ -7,14 +7,14 @@ function Contacts() {
       <div className="flex justify-between mb-8 md:justify-around">
         <a
           href="mailto:gianpinili@gmail.com"
-          className="text-[.8rem] uppercase text-active hover:text-[.85rem] duration-200"
+          className="text-[.8rem] uppercase text-active hover:text-[.85rem] duration-200 hover:text-primary"
         >
           Send me an Email
         </a>
         <a
           href="https://www.linkedin.com/in/ianpinili/"
           target="_blank"
-          className="text-[.8rem] uppercase text-active hover:text-[.85rem] duration-200"
+          className="text-[.8rem] uppercase text-active hover:text-[.85rem] duration-200 hover:text-primary"
         >
           Connect on LinkedIn
         </a>
