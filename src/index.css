@@ -24,21 +24,6 @@ body {
   }
 }
 
-@keyframes fadeInTopDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in {
-  animation: fadeInTopDown 1s ease-in-out forwards;
-}
-
 @keyframes fadeInFooter {
   from {
     opacity: 0;
@@ -54,15 +39,31 @@ body {
   animation: fadeInFooter 1s ease-in-out forwards;
 }
 
-@keyframes floatingNavEnter {
+@keyframes fadeInTopDown {
   from {
-    transform: translateX(-100%);
+    opacity: 0;
+    transform: translateX(-30px);
   }
   to {
+    opacity: 1;
     transform: translateX(0);
   }
 }
 
-.floating-nav-enter {
-  animation: floatingNavEnter 1s ease-in-out forwards;
+.fade-in {
+  animation: fadeInTopDown 1s ease-in-out forwards;
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-nav {
+  animation: fadeInTop 1s ease-in-out;
 }

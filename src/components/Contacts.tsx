@@ -1,7 +1,7 @@
 function Contacts() {
   return (
-    <div className="my-0 mx-16 md:my-[-2rem]  md:mx-12 md:px-[6rem] mb-[5vh] md:mb-[10vh] lg:my-[-2rem] lg:mb-[8vh] lg:px-[8rem] xl:px-[10rem] xl:my-[-3rem] xl:mb-[7vh] 2xl:px-[18rem] fade-in">
-      <h1 className="text-5xl font-bold text-center mb-8 lg:text-[3.5rem] lg:mb-10 xl:text-[4rem] xl:mb-16">
+    <div className="my-0 mx-16 md:my-[-2rem]  md:mx-12 md:px-[6rem] mb-[5vh] md:mb-[10vh] lg:my-[-2rem] lg:mb-[8vh] lg:px-[8rem] xl:px-[10rem] xl:my-[-3rem] xl:mb-[7vh] 2xl:px-[18rem] fade-in-nav">
+      <h1 className="text-3xl font-bold text-center mb-8 lg:text-[3.5rem] lg:mb-10 xl:text-[4rem] xl:mb-16">
         Connect with me
       </h1>
       <div className="flex justify-between mb-8 md:justify-around">

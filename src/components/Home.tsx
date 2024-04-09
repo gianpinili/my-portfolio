@@ -28,7 +28,7 @@ function Home() {
 
   return (
     <>
-      <div className="flex flex-col items-start mx-16 md:mx-12 md:px-[6rem] xl:mx-auto xl:px-[18rem] 2xl:px-[22rem] my-12 mb-[20rem] fade-in">
+      <div className="flex flex-col items-start mx-6 md:mx-12 md:px-[6rem] lg:px-[8rem] xl:mx-auto xl:px-[18rem] 2xl:px-[22rem] my-12 mb-[18rem] fade-in-nav">
         <p className="text-[.8rem] text-primary md:text-base xl:text-xl">
           Hi, my name is
         </p>

@@ -3,7 +3,7 @@ import { Linkedin, Github, Mail, Paperclip } from "lucide-react";
 function FloatingNav() {
   return (
     <>
-      <div className="floating-nav-enter fixed flex-col top-[35%] left-0 hidden lg:block">
+      <div className="fixed flex-col top-[35%] left-0 hidden lg:block fade-in">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center bg-[#008ddf] ml-[-100px] hover:ml-[0px] duration-300">
             <a
