@@ -18,8 +18,8 @@ function Skills() {
         <h1 className="text-3xl mx-6 mb-8 font-bold border-b-2 border-active pb-4 lg:text-4xl max-w-[5rem] lg:max-w-[7rem] xl:text-5xl xl:max-w-[8rem]">
           Skills
         </h1>
-        <p className="mx-6 mb-14 text-center text-[1.2rem]">
-          - Technologies I've worked with -
+        <p className="mx-6 mb-14 text-center text-[1.75rem] uppercase tracking-widest font-bold">
+          - Tech Stack -
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 mx-6 bg-[#e1e1e1]">
           <div className="shadow-md shadow-[#7a7a7a] hover:shadow-[#f0b985] hover:scale-110 duration-500 pt-4">
