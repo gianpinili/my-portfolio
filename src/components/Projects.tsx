@@ -26,7 +26,7 @@ function Projects() {
               <a
                 href="https://github.com/gianpinili/coffeeshop"
                 target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
               >
                 Code
               </a>
@@ -54,7 +54,7 @@ function Projects() {
               <a
                 href="https://github.com/gianpinili/travel-site"
                 target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
               >
                 Code
               </a>
@@ -82,7 +82,7 @@ function Projects() {
               <a
                 href="https://github.com/gianpinili/band-site"
                 target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
               >
                 Code
               </a>
@@ -110,7 +110,7 @@ function Projects() {
               <a
                 href="https://github.com/gianpinili/hackathon-2"
                 target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
               >
                 Code
               </a>
@@ -138,7 +138,7 @@ function Projects() {
               <a
                 href="https://github.com/gianpinili/brainflix"
                 target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
               >
                 Code
               </a>
@@ -166,7 +166,7 @@ function Projects() {
               <a
                 href="https://github.com/gianpinili/manuspec-capstone"
                 target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
               >
                 Code
               </a>

@@ -67,3 +67,12 @@ body {
 .fade-in-nav {
   animation: fadeInTop 1s ease-in-out;
 }
+
+.home__about {
+  margin: 12rem 0;
+}
+
+.home__contact {
+  margin-top: 20rem;
+  margin-bottom: 12rem;
+}
