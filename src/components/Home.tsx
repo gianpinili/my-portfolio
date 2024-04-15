@@ -96,6 +96,10 @@ function Home() {
       <div className="home__contact">
         <Contacts />
       </div>
+      <div className="hidden md:inline fixed right-[2.5rem] bottom-[30rem]">
+        {/* <ChevronUp />
+        <ChevronDown /> */}
+      </div>
       <FloatingContact />
     </>
   );

@@ -14,24 +14,14 @@ function Projects() {
         </h1>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 my-10 fade-in">
           <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={CoffeeShop}
-              alt="Coffee Shop Picture"
-              className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
-            />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                Demo
-              </button>
-              <a
-                href="https://github.com/gianpinili/coffeeshop"
-                target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
-              >
-                Code
-              </a>
-            </div>
-            <div className="mx-20 h-[1px] bg-active flex justify-center relative my-4">
+            <a href="https://github.com/gianpinili/coffeeshop" target="_blank">
+              <img
+                src={CoffeeShop}
+                alt="Coffee Shop Picture"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
+              />
+            </a>
+            <div className=" mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
               <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
                 Coffee Shop
               </div>
@@ -42,24 +32,14 @@ function Projects() {
             </p>
           </div>
           <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={TravelSite}
-              alt="Travel Site Picture"
-              className="rounded-md duration-200 hover:scale-105 object-center w-[100%]"
-            />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                Demo
-              </button>
-              <a
-                href="https://github.com/gianpinili/travel-site"
-                target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
-              >
-                Code
-              </a>
-            </div>
-            <div className="mx-20 h-[1px] bg-active flex justify-center relative my-4">
+            <a href="https://github.com/gianpinili/travel-site" target="_blank">
+              <img
+                src={TravelSite}
+                alt="Travel Site Picture"
+                className="rounded-md duration-200 hover:scale-105 object-center w-[100%]"
+              />
+            </a>
+            <div className=" mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
               <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
                 Travel Site
               </div>
@@ -70,24 +50,14 @@ function Projects() {
             </p>
           </div>
           <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={BandSite}
-              alt="Band Site Picture"
-              className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
-            />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                Demo
-              </button>
-              <a
-                href="https://github.com/gianpinili/band-site"
-                target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
-              >
-                Code
-              </a>
-            </div>
-            <div className="mx-20 h-[1px] bg-active flex justify-center relative my-4">
+            <a href="https://github.com/gianpinili/band-site" target="_blank">
+              <img
+                src={BandSite}
+                alt="Band Site Picture"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
+              />
+            </a>
+            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative ">
               <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
                 Band Site
               </div>
@@ -98,24 +68,14 @@ function Projects() {
             </p>
           </div>
           <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={Hackathon}
-              alt="Hogwarts Hackathon Picture"
-              className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
-            />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                Demo
-              </button>
-              <a
-                href="https://github.com/gianpinili/hackathon-2"
-                target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
-              >
-                Code
-              </a>
-            </div>
-            <div className="mx-20 h-[1px] bg-active flex justify-center relative my-4">
+            <a href="https://github.com/gianpinili/hackathon-2" target="_blank">
+              <img
+                src={Hackathon}
+                alt="Hogwarts Hackathon Picture"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
+              />
+            </a>
+            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
               <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
                 Hackathon
               </div>
@@ -126,24 +86,14 @@ function Projects() {
             </p>
           </div>
           <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={BrainFlix}
-              alt="BrainFlix Picture"
-              className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
-            />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                Demo
-              </button>
-              <a
-                href="https://github.com/gianpinili/brainflix"
-                target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
-              >
-                Code
-              </a>
-            </div>
-            <div className="mx-20 h-[1px] bg-active flex justify-center relative my-4">
+            <a href="https://github.com/gianpinili/brainflix" target="_blank">
+              <img
+                src={BrainFlix}
+                alt="BrainFlix Picture"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
+              />
+            </a>
+            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
               <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
                 BrainFlix
               </div>
@@ -154,24 +104,17 @@ function Projects() {
             </p>
           </div>
           <div className="shadow-md shadow-gray-600 rounded-lg">
-            <img
-              src={Capstone}
-              alt="Travel Site Picture"
-              className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
-            />
-            <div className="flex items-center justify-center">
-              <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                Demo
-              </button>
-              <a
-                href="https://github.com/gianpinili/manuspec-capstone"
-                target="_blank"
-                className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
-              >
-                Code
-              </a>
-            </div>
-            <div className="mx-20 h-[1px] bg-active flex justify-center relative my-4">
+            <a
+              href="https://github.com/gianpinili/manuspec-capstone"
+              target="_blank"
+            >
+              <img
+                src={Capstone}
+                alt="Travel Site Picture"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
+              />
+            </a>
+            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
               <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
                 ManuSpec
               </div>
