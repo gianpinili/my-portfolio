@@ -18,7 +18,7 @@ function Projects() {
               <img
                 src={CoffeeShop}
                 alt="Coffee Shop Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
               />
             </a>
             <div className=" mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
@@ -36,7 +36,7 @@ function Projects() {
               <img
                 src={TravelSite}
                 alt="Travel Site Picture"
-                className="rounded-md duration-200 hover:scale-105 object-center w-[100%]"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
               />
             </a>
             <div className=" mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
@@ -54,7 +54,7 @@ function Projects() {
               <img
                 src={BandSite}
                 alt="Band Site Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
               />
             </a>
             <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative ">
@@ -72,7 +72,7 @@ function Projects() {
               <img
                 src={Hackathon}
                 alt="Hogwarts Hackathon Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
               />
             </a>
             <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
@@ -90,7 +90,7 @@ function Projects() {
               <img
                 src={BrainFlix}
                 alt="BrainFlix Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
               />
             </a>
             <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
@@ -111,7 +111,7 @@ function Projects() {
               <img
                 src={Capstone}
                 alt="Travel Site Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%]"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
               />
             </a>
             <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
