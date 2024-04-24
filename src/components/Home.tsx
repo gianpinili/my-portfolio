@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo, useRef } from "react";
-import { Download } from "lucide-react";
+import { Download, ChevronDown, ChevronUp } from "lucide-react";
 import FloatingContact from "./FloatingContact";
 import About from "./About";
 import Projects from "./Projects";
@@ -96,12 +96,12 @@ function Home() {
       <div className="home__contact">
         <Contacts />
       </div>
-      {/* <div className="hidden md:inline fixed right-[2.5rem] bottom-[32rem]">
+      <div className="hidden md:inline fixed right-[2.5rem] bottom-[32rem]">
         <ChevronUp />
       </div>
       <div className="hidden md:inline fixed right-[2.5rem] bottom-[30rem]">
         <ChevronDown />
-      </div> */}
+      </div>
       <FloatingContact />
     </>
   );
