@@ -58,11 +58,11 @@ function Home() {
           {text}&nbsp;
         </p>
         <p className="text-[1rem] mb-5 mt-2 md:my-2  md:mx-0 xl:text-xl">
-          I am a Web Developer based in Vancouver with a passion for creating
-          exceptional digital experiences. From sleek designs to robust
-          functionality, I specialize in crafting websites that exceed
-          expectations. Explore my portfolio to see how I can elevate your
-          online presence.
+          I am a Web Developer at The Hockey Shop based in Vancouver with a
+          passion for creating exceptional digital experiences. From sleek
+          designs to robust functionality, I specialize in crafting websites
+          that exceed expectations. Explore my portfolio to see how I can
+          elevate your online presence.
         </p>
         <div className="flex justify-center gap-8 my-4 mx-auto md:mx-0 flex-wrap">
           <a
