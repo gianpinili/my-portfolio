@@ -70,9 +70,9 @@ function About() {
             unwavering loyalty and affection bring boundless happiness, serving
             as a constant source of warmth and companionship in my daily
             adventures.{" "}
-            <span className="text-active">
+            {/* <span className="text-active">
               (Reach out to me and you can play with my dog)
-            </span>
+            </span> */}
           </p>
         </div>
       </div>
