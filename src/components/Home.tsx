@@ -30,18 +30,31 @@ function Home() {
 
   const aboutRef = useRef<HTMLDivElement>(null);
   const projectRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
 
-  //scroll to about section on click
-  const scrollToAbout = () => {
-    if (aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+  const sections = [aboutRef, projectRef, contactRef];
+
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  //scroll to projects section on click
-  const scrollToProjects = () => {
-    if (projectRef.current) {
-      projectRef.current.scrollIntoView({ behavior: "smooth" });
+  // Function to scroll to the next section downwards
+  const scrollToNextSection = () => {
+    const currentPosition = window.pageYOffset;
+
+    // Find the next section below the current position
+    const nextSectionIndex = sections.findIndex(
+      (section) =>
+        section.current?.offsetTop &&
+        section.current.offsetTop > currentPosition
+    );
+
+    // If next section found, scroll to it
+    if (nextSectionIndex !== -1) {
+      sections[nextSectionIndex].current?.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
 
@@ -74,16 +87,16 @@ function Home() {
             <Download className="hover:animate-bounce" />
           </a>
           <button
-            onClick={scrollToAbout}
+            onClick={scrollToTop}
             className="bg-[black] hover:bg-[#494545] text-white font-bold py-2 px-4 text-center rounded-full md:py-4 md:px-6 duration-200"
           >
-            Explore My Journey
+            Go to Top
           </button>
           <button
-            onClick={scrollToProjects}
+            onClick={scrollToNextSection}
             className="bg-active hover:bg-primary text-white font-bold py-2 px-4 text-center rounded-full md:py-4 md:px-6 duration-200 hover:opacity-70"
           >
-            Projects
+            Scroll Down
           </button>
         </div>
       </div>
@@ -93,13 +106,19 @@ function Home() {
       <div ref={projectRef}>
         <Projects />
       </div>
-      <div className="home__contact">
+      <div ref={contactRef} className="home__contact">
         <Contacts />
       </div>
-      <div className="hidden md:inline fixed right-[2.5rem] bottom-[32rem]">
+      <div
+        className="hidden md:inline fixed right-[2.5rem] bottom-[32rem] cursor-pointer"
+        onClick={scrollToTop}
+      >
         <ChevronUp />
       </div>
-      <div className="hidden md:inline fixed right-[2.5rem] bottom-[30rem]">
+      <div
+        className="hidden md:inline fixed right-[2.5rem] bottom-[30rem] cursor-pointer"
+        onClick={scrollToNextSection}
+      >
         <ChevronDown />
       </div>
       <FloatingContact />
