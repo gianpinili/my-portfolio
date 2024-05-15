@@ -87,17 +87,17 @@ function Home() {
             <Download className="hover:animate-bounce" />
           </a>
           <button
-            onClick={scrollToTop}
+            onClick={scrollToNextSection}
             className="bg-[black] hover:bg-[#494545] text-white font-bold py-2 px-4 text-center rounded-full md:py-4 md:px-6 duration-200"
           >
-            Go to Top
+            About Me
           </button>
-          <button
+          {/* <button
             onClick={scrollToNextSection}
             className="bg-active hover:bg-primary text-white font-bold py-2 px-4 text-center rounded-full md:py-4 md:px-6 duration-200 hover:opacity-70"
           >
             Scroll Down
-          </button>
+          </button> */}
         </div>
       </div>
       <div ref={aboutRef} className="home__about">
