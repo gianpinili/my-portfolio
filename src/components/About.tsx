@@ -44,7 +44,7 @@ function About() {
               A little more about me...
             </h1>
           </div>
-          <div className="hidden md:flex justify-around mb-6 mx-6">
+          <div className="hidden md:flex justify-around mb-6 mx-6 2xl:gap-6">
             <img
               src={Hockey}
               className="w-[13rem] object-cover rounded-lg lg:w-[16rem] xl:w-[20rem] 2xl:w-[25rem]"
