@@ -5,6 +5,8 @@ import BandSite from "/bandsite.jpeg";
 import BrainFlix from "/brainflix.jpeg";
 import Hackathon from "/hackathon.jpeg";
 import Capstone from "/capstone.jpeg";
+import Tattoo from "/tattoo.png";
+import THS from "/ths.jpeg";
 function Projects() {
   return (
     <>
@@ -123,6 +125,48 @@ function Projects() {
               Digitize automotive inspection reports to streamline the process
               and enhance efficiency within the automotive industry.
             </p>
+          </div>
+          <div className="shadow-md shadow-gray-600 rounded-lg">
+            <a
+              href="https://github.com/gianpinili/tattoo-template"
+              target="_blank"
+            >
+              <img
+                src={Tattoo}
+                alt="Tattoo Template Picture"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
+              />
+            </a>
+            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative md:mx-10">
+              <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
+                Tattoo Template
+              </div>
+            </div>
+            <p className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active">
+              Simple static website template for tattoo enthusiasts. Practicing new technologies and libraries to improve my skills and experience.
+            </p>
+            <a className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active" target="_blank" href="https://tattoo-template.netlify.app/"><p>- View Website -</p> </a>
+          </div>
+          <div className="shadow-md shadow-gray-600 rounded-lg">
+            <a
+              href="https://www.thehockeyshop.com/"
+              target="_blank"
+            >
+              <img
+                src={THS}
+                alt="THS Picture"
+                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
+              />
+            </a>
+            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative md:mx-10">
+              <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
+                The Hockey Shop
+              </div>
+            </div>
+            <p className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active">
+              Built multiple front-end components to improve user experience and enhance functionality. Integrated interactive elements with animations and transitions to add dyanmism to the user interface.
+            </p>
+            <a className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active" target="_blank" href="https://www.thehockeyshop.com/"><p>- View Website -</p> </a>
           </div>
         </div>
       </div>
