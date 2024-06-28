@@ -7,6 +7,86 @@ import Hackathon from "/hackathon.jpeg";
 import Capstone from "/capstone.jpeg";
 import Tattoo from "/tattoo.png";
 import THS from "/ths.jpeg";
+import THSOpen from "/thsopen.png";
+
+const projects = [
+  {
+    img: CoffeeShop,
+    alt: "Coffee Shop Picture",
+    href: "https://github.com/gianpinili/coffeeshop",
+    title: "Coffee Shop",
+    description:
+      "A simple HTML & CSS website highlighting the products offered by the company.",
+  },
+  {
+    img: TravelSite,
+    alt: "Travel Site Picture",
+    href: "https://github.com/gianpinili/travel-site",
+    title: "Travel Site",
+    description:
+      "Leveraging HTML alongside SCSS for dynamic web design. Designed to display various travel destinations.",
+  },
+  {
+    img: BandSite,
+    alt: "Band Site Picture",
+    href: "https://github.com/gianpinili/band-site",
+    title: "Band Site",
+    description:
+      "Band information is seamlessly showcased with integrated API functionality, facilitating user engagement and interaction.",
+  },
+  {
+    img: Hackathon,
+    alt: "Hogwarts Hackathon Picture",
+    href: "https://github.com/gianpinili/hackathon-2",
+    title: "Hackathon",
+    description:
+      "Collaborated with a team to develop a website aimed at honing API utilization skills.",
+  },
+  {
+    img: BrainFlix,
+    alt: "BrainFlix Picture",
+    href: "https://github.com/gianpinili/brainflix",
+    title: "BrainFlix",
+    description:
+      "An extensive CRUD web application with full-stack capabilities, showcasing seamless data management and manipulation.",
+  },
+  {
+    img: Capstone,
+    alt: "Capstone Picture",
+    href: "https://github.com/gianpinili/manuspec-capstone",
+    title: "ManuSpec",
+    description:
+      "Digitize automotive inspection reports to streamline the process and enhance efficiency within the automotive industry.",
+  },
+  {
+    img: Tattoo,
+    alt: "Tattoo Template Picture",
+    href: "https://github.com/gianpinili/tattoo-template",
+    title: "Tattoo Template",
+    description:
+      "Simple static website template for tattoo enthusiasts. Practicing new technologies and libraries to improve my skills and experience.",
+    liveLink: "https://tattoo-template.netlify.app/",
+  },
+  {
+    img: THS,
+    alt: "THS Picture",
+    href: "https://www.thehockeyshop.com/",
+    title: "The Hockey Shop",
+    description:
+      "Built multiple front-end components to improve user experience and enhance functionality. Integrated interactive elements with animations and transitions to add dynamism to the user interface.",
+    liveLink: "https://www.thehockeyshop.com/",
+  },
+  {
+    img: THSOpen,
+    alt: "THS Open Picture",
+    href: "https://thsopen.com",
+    title: "THS Open",
+    description:
+      "Collaborated with a designer to custom build a static website for a golf tournament in support of the Canucks Autism Network. Implemented responsive design and optimized loading times to ensure a smooth user experience.",
+    liveLink: "https://thsopen.com",
+  },
+];
+
 function Projects() {
   return (
     <>
@@ -15,159 +95,36 @@ function Projects() {
           Projects
         </h1>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 my-10 fade-in">
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <a href="https://github.com/gianpinili/coffeeshop" target="_blank">
-              <img
-                src={CoffeeShop}
-                alt="Coffee Shop Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
-              />
-            </a>
-            <div className=" mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
-              <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
-                Coffee Shop
+          {projects
+            .slice()
+            .reverse()
+            .map((project, index) => (
+              <div key={index} className="shadow-md shadow-gray-600 rounded-lg">
+                <a href={project.href} target="_blank">
+                  <img
+                    src={project.img}
+                    alt={project.alt}
+                    className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
+                  />
+                </a>
+                <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
+                  <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
+                    {project.title}
+                  </div>
+                </div>
+                <p className="text-center text-[.8rem] opacity-100 p-2 rounded-md text-active">
+                  {project.description}
+                </p>
+                {project.liveLink && (
+                  <a
+                    className="text-center text-[.8rem] opacity-100 p-2 rounded-md text-active"
+                    target="_blank"
+                    href={project.liveLink}>
+                    <p>- View Website -</p>
+                  </a>
+                )}
               </div>
-            </div>
-            <p className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active">
-              A simple HTML & CSS website highlighting the products offered by
-              the company.
-            </p>
-          </div>
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <a href="https://github.com/gianpinili/travel-site" target="_blank">
-              <img
-                src={TravelSite}
-                alt="Travel Site Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
-              />
-            </a>
-            <div className=" mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
-              <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
-                Travel Site
-              </div>
-            </div>
-            <p className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active">
-              Leveraging HTML alongside SCSS for dynamic web design. Designed to
-              display various travel destinations.
-            </p>
-          </div>
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <a href="https://github.com/gianpinili/band-site" target="_blank">
-              <img
-                src={BandSite}
-                alt="Band Site Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
-              />
-            </a>
-            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative ">
-              <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
-                Band Site
-              </div>
-            </div>
-            <p className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active">
-              Band information is seamlessly showcased with integrated API
-              functionality, facilitating user engagement and interaction.
-            </p>
-          </div>
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <a href="https://github.com/gianpinili/hackathon-2" target="_blank">
-              <img
-                src={Hackathon}
-                alt="Hogwarts Hackathon Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
-              />
-            </a>
-            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
-              <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
-                Hackathon
-              </div>
-            </div>
-            <p className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active">
-              Collaborated with a team to develop a website aimed at honing API
-              utilization skills.
-            </p>
-          </div>
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <a href="https://github.com/gianpinili/brainflix" target="_blank">
-              <img
-                src={BrainFlix}
-                alt="BrainFlix Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
-              />
-            </a>
-            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
-              <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
-                BrainFlix
-              </div>
-            </div>
-            <p className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active">
-              An extensive CRUD web application with full-stack capabilities,
-              showcasing seamless data management and manipulation.
-            </p>
-          </div>
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <a
-              href="https://github.com/gianpinili/manuspec-capstone"
-              target="_blank"
-            >
-              <img
-                src={Capstone}
-                alt="Travel Site Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
-              />
-            </a>
-            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
-              <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
-                ManuSpec
-              </div>
-            </div>
-            <p className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active">
-              Digitize automotive inspection reports to streamline the process
-              and enhance efficiency within the automotive industry.
-            </p>
-          </div>
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <a
-              href="https://github.com/gianpinili/tattoo-template"
-              target="_blank"
-            >
-              <img
-                src={Tattoo}
-                alt="Tattoo Template Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
-              />
-            </a>
-            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative md:mx-10">
-              <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
-                Tattoo Template
-              </div>
-            </div>
-            <p className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active">
-              Simple static website template for tattoo enthusiasts. Practicing new technologies and libraries to improve my skills and experience.
-            </p>
-            <a className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active" target="_blank" href="https://tattoo-template.netlify.app/"><p>- View Website -</p> </a>
-          </div>
-          <div className="shadow-md shadow-gray-600 rounded-lg">
-            <a
-              href="https://www.thehockeyshop.com/"
-              target="_blank"
-            >
-              <img
-                src={THS}
-                alt="THS Picture"
-                className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
-              />
-            </a>
-            <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative md:mx-10">
-              <div className="text-[.8rem] uppercase text-active absolute top-[-20px]">
-                The Hockey Shop
-              </div>
-            </div>
-            <p className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active">
-              Built multiple front-end components to improve user experience and enhance functionality. Integrated interactive elements with animations and transitions to add dyanmism to the user interface.
-            </p>
-            <a className="text-center text-[.8rem]  opacity-100 p-2 rounded-md text-active" target="_blank" href="https://www.thehockeyshop.com/"><p>- View Website -</p> </a>
-          </div>
+            ))}
         </div>
       </div>
       <FloatingContact />
