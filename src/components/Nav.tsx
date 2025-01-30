@@ -32,8 +32,7 @@ function Nav() {
                   ? "text-lg border-b border-active"
                   : "text-base"
               }`}
-              onClick={closeMenu}
-            >
+              onClick={closeMenu}>
               Home
             </p>
           </Link>
@@ -44,8 +43,7 @@ function Nav() {
                   ? "text-lg border-b border-active"
                   : "text-base"
               }`}
-              onClick={closeMenu}
-            >
+              onClick={closeMenu}>
               About
             </p>
           </Link>
@@ -56,8 +54,7 @@ function Nav() {
                   ? "text-lg border-b border-active"
                   : "text-base"
               }`}
-              onClick={closeMenu}
-            >
+              onClick={closeMenu}>
               Projects
             </p>
           </Link>
@@ -68,8 +65,7 @@ function Nav() {
                   ? "text-lg border-b border-active"
                   : "text-base"
               }`}
-              onClick={closeMenu}
-            >
+              onClick={closeMenu}>
               Contact
             </p>
           </Link>
@@ -77,23 +73,20 @@ function Nav() {
             className={`md:hidden group flex h-20 w-20 cursor-pointer items-center justify-center rounded-3xl bg-[#E1E1E1] p-2 ${
               isClicked ? "hover:bg-slate-200" : ""
             }`}
-            onClick={toggleMenu}
-          >
+            onClick={toggleMenu}>
             <div className="space-y-2">
               <span
                 className={`block h-1 w-10 origin-center rounded-full bg-slate-500 transition-transform ease-in-out ${
                   isClicked
                     ? "group-hover:translate-y-1.5 group-hover:rotate-45"
                     : ""
-                }`}
-              ></span>
+                }`}></span>
               <span
                 className={`block h-1 w-8 origin-center rounded-full bg-orange-500 transition-transform ease-in-out ${
                   isClicked
                     ? "group-hover:w-10 group-hover:-translate-y-1.5 group-hover:-rotate-45"
                     : ""
-                }`}
-              ></span>
+                }`}></span>
             </div>
           </div>
         </div>
@@ -111,29 +104,25 @@ function Nav() {
             height: "100%",
             backgroundColor: "rgba(255, 255, 255, 0.97)",
             zIndex: 999,
-          }}
-        >
+          }}>
           <div
             className={`md:hidden group flex h-20 w-20 cursor-pointer items-center justify-center rounded-3xl bg-[#E1E1E1] p-2 absolute top-10 right-10 ${
               isClicked ? "hover:bg-slate-200" : ""
             }`}
-            onClick={toggleMenu}
-          >
+            onClick={toggleMenu}>
             <div className="space-y-2">
               <span
                 className={`block h-1 w-10 origin-center rounded-full bg-slate-500 transition-transform ease-in-out ${
                   isClicked
                     ? "group-hover:translate-y-1.5 group-hover:rotate-45"
                     : ""
-                }`}
-              ></span>
+                }`}></span>
               <span
                 className={`block h-1 w-8 origin-center rounded-full bg-orange-500 transition-transform ease-in-out ${
                   isClicked
                     ? "group-hover:w-10 group-hover:-translate-y-1.5 group-hover:-rotate-45"
                     : ""
-                }`}
-              ></span>
+                }`}></span>
             </div>
           </div>
           <Link to="/">
@@ -141,8 +130,7 @@ function Nav() {
               className={`block mb-2 text-3xl border-b mx-12 py-3 ${
                 location.pathname === "/" ? "text-4xl text-primary" : "text-3xl"
               }`}
-              onClick={closeMenu}
-            >
+              onClick={closeMenu}>
               Home
             </p>
           </Link>
@@ -153,8 +141,7 @@ function Nav() {
                   ? "text-4xl text-primary"
                   : "text-3xl"
               }`}
-              onClick={closeMenu}
-            >
+              onClick={closeMenu}>
               About
             </p>
           </Link>
@@ -165,8 +152,7 @@ function Nav() {
                   ? "text-4xl text-primary"
                   : "text-3xl"
               }`}
-              onClick={closeMenu}
-            >
+              onClick={closeMenu}>
               Projects
             </p>
           </Link>
@@ -177,8 +163,7 @@ function Nav() {
                   ? "text-4xl text-primary"
                   : "text-3xl"
               }`}
-              onClick={closeMenu}
-            >
+              onClick={closeMenu}>
               Contact
             </p>
           </Link>

@@ -8,7 +8,9 @@ import Nala from "../../public/nala.jpg";
 function About() {
   return (
     <>
-      <div className="fade-in-nav md:mx-12 md:p-0 md:mb-0 lg:mx-24 xl:mx-32 2xl:mx-48">
+      <div
+        className="fade-in-nav md:mx-12 md:p-0 md:mb-0 lg:mx-24 xl:mx-32 2xl:mx-48"
+        id="about">
         <div className="max-w-[12rem] lg:max-w-[14rem] xl:max-w-[17rem]">
           <h1 className="text-3xl mx-6 mb-8 font-bold border-b-2 border-active pb-4 lg:mb-0 lg:text-4xl xl:text-5xl">
             About me

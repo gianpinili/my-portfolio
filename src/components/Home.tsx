@@ -71,12 +71,11 @@ function Home() {
           {text}&nbsp;
         </p>
         <p className="text-[1rem] mb-5 mt-2 md:my-2  md:mx-0 xl:text-xl">
-          A Full Stack Developer passionate about creating exceptional digital
-          experiences. Currently, I work as a Web Merchandiser at JD Sports
-          Canada, focusing on the front-end of our e-commerce platform. On the
-          side, I build and revamp websites for individuals and companies,
-          ensuring visually appealing designs and smooth functionality. Check
-          out my portfolio to see how I can elevate your online presence.
+          Currently, working as a Web Merchandiser at JD Sports Canada, focusing
+          on the front-end of our e-commerce platform. On the side, I build and
+          revamp websites for individuals and companies, ensuring visually
+          appealing designs and smooth functionality. Check out my portfolio to
+          see how I can elevate your online presence.
         </p>
         <div className="flex justify-center gap-8 my-4 mx-auto md:mx-0 flex-wrap">
           <a
