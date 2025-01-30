@@ -1,9 +1,9 @@
 import FloatingContact from "./FloatingContact";
 import Skills from "./Skills";
-import Headshot from "/headshot.png";
-import Golf from "/golf.jpg";
-import Hockey from "/hockey.jpg";
-import Nala from "/nala.jpg";
+import Headshot from "../../public/headshot.png";
+import Golf from "../../public/golf.jpg";
+import Hockey from "../../public/hockey.jpg";
+import Nala from "../../public/nala.jpg";
 
 function About() {
   return (
@@ -23,15 +23,14 @@ function About() {
             />
           </div>
           <div className="md:w-1/2 lg:text-xl xl:text-[1.4rem] tracking-wide xl:tracking-widest lg:mt-6">
-            I am a Full Stack Web Developer situated in Vancouver, drawing upon
-            my roots in the automotive industry as a foundation for my
-            transition into software development. My aim is to seamlessly blend
-            the skills acquired in my previous field with the intricacies of
-            coding to ensure optimal user experiences in all my projects. Open
-            to collaborative opportunities, I approach each venture with
-            enthusiasm and a steadfast commitment to growth, aiming to make a
-            meaningful impact through continuous learning and innovative
-            contributions.
+            I'm a Full Stack Developer based in Vancouver with a background in
+            the automotive industry. Currently, I'm working as a web
+            merchandiser, where I combine my web development skills to customize
+            and enhance our online presence. I've also gained expertise in
+            e-commerce, deepeneing my understanding of online business and user
+            behaviour. I'm passionate about collaborating and continually
+            learning to create impactful digital solutions. Let's build
+            something exceptional together!
           </div>
         </div>
         <Skills />

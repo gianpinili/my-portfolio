@@ -71,25 +71,24 @@ function Home() {
           {text}&nbsp;
         </p>
         <p className="text-[1rem] mb-5 mt-2 md:my-2  md:mx-0 xl:text-xl">
-          I am a Web Developer at The Hockey Shop based in Vancouver with a
-          passion for creating exceptional digital experiences. From sleek
-          designs to robust functionality, I specialize in crafting websites
-          that exceed expectations. Explore my portfolio to see how I can
-          elevate your online presence.
+          A Full Stack Developer passionate about creating exceptional digital
+          experiences. Currently, I work as a Web Merchandiser at JD Sports
+          Canada, focusing on the front-end of our e-commerce platform. On the
+          side, I build and revamp websites for individuals and companies,
+          ensuring visually appealing designs and smooth functionality. Check
+          out my portfolio to see how I can elevate your online presence.
         </p>
         <div className="flex justify-center gap-8 my-4 mx-auto md:mx-0 flex-wrap">
           <a
             href="../../public/ian-pinili-resume.pdf"
             download="ian-pinili-resume.pdf"
-            className="bg-primary hover:bg-[#494545] text-white font-bold py-2 px-4 text-center rounded-full md:py-4 md:px-6 duration-200 flex gap-4 hover:opacity-70"
-          >
+            className="bg-primary hover:bg-[#494545] text-white font-bold py-2 px-4 text-center rounded-full md:py-4 md:px-6 duration-200 flex gap-4 hover:opacity-70">
             Download CV
             <Download className="hover:animate-bounce" />
           </a>
           <button
             onClick={scrollToNextSection}
-            className="bg-[black] hover:bg-[#494545] text-white font-bold py-2 px-4 text-center rounded-full md:py-4 md:px-6 duration-200"
-          >
+            className="bg-[black] hover:bg-[#494545] text-white font-bold py-2 px-4 text-center rounded-full md:py-4 md:px-6 duration-200">
             About Me
           </button>
           {/* <button
@@ -111,14 +110,12 @@ function Home() {
       </div>
       <div
         className="hidden md:inline fixed right-[2.5rem] bottom-[32rem] cursor-pointer"
-        onClick={scrollToTop}
-      >
+        onClick={scrollToTop}>
         <ChevronUp />
       </div>
       <div
         className="hidden md:inline fixed right-[2.5rem] bottom-[30rem] cursor-pointer"
-        onClick={scrollToNextSection}
-      >
+        onClick={scrollToNextSection}>
         <ChevronDown />
       </div>
       <FloatingContact />

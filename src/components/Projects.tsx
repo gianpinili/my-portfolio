@@ -8,6 +8,8 @@ import Capstone from "/capstone.jpeg";
 import Tattoo from "/tattoo.png";
 import THS from "/ths.jpeg";
 import THSOpen from "/thsopen.png";
+import JD from "/jd.png";
+import Ace from "/ace.png";
 
 const projects = [
   {
@@ -84,6 +86,24 @@ const projects = [
     description:
       "Collaborated with a designer to custom build a static website for a golf tournament in support of the Canucks Autism Network. Implemented responsive design and optimized loading times to ensure a smooth user experience.",
     liveLink: "https://thsopen.com",
+  },
+  {
+    img: JD,
+    alt: "JD Sports Canada Picture",
+    href: "https://www.jdsports.ca/",
+    title: "JD Sports Canada",
+    description:
+      "Enhanced the e-commerce website, improving user experience and merchandising strategies. Developed custom UI components to better align with business goals and increase user engagement",
+    liveLink: "https://www.jdsports.ca/",
+  },
+  {
+    img: Ace,
+    alt: "Ace Motel Picture",
+    href: "https://princetonacemotel.com/",
+    title: "Princeton Ace Motel",
+    description:
+      "Learned and implemented new technologies to revamp the website and improve user experience. Collaborated closely with the motel's management to integrate online booking functionalities and promote special offers, enhancing overall user satisfaction and driving revenue growth.",
+    liveLink: "https://princetonacemotel.com/",
   },
 ];
 
