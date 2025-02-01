@@ -10,6 +10,7 @@ import THS from "/ths.jpeg";
 import THSOpen from "/thsopen.png";
 import JD from "/jd.png";
 import Ace from "/ace.png";
+import Auto from "/auto.jpeg";
 
 const projects = [
   {
@@ -88,6 +89,15 @@ const projects = [
     liveLink: "https://thsopen.com",
   },
   {
+    img: Auto,
+    alt: "Auto Picture",
+    href: "https://automotive-shop-ten.vercel.app/",
+    title: "Automotive Shop Template",
+    description:
+      "A simple static website template for automotive enthusiasts. Practicing new technologies and libraries to improve my skills and experience. Created a template for future projects. Separated components to allow for reusability.",
+    liveLink: "https://automotive-shop-ten.vercel.app/",
+  },
+  {
     img: JD,
     alt: "JD Sports Canada Picture",
     href: "https://www.jdsports.ca/",
@@ -124,7 +134,7 @@ function Projects() {
                   <img
                     src={project.img}
                     alt={project.alt}
-                    className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75"
+                    className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75 max-h-[16rem]"
                   />
                 </a>
                 <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
