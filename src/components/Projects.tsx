@@ -134,7 +134,7 @@ function Projects() {
                   <img
                     src={project.img}
                     alt={project.alt}
-                    className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75 max-h-[16rem]"
+                    className="rounded-md duration-200 hover:scale-105 object-cover w-[100%] hover:opacity-75 max-h-[14rem]"
                   />
                 </a>
                 <div className="mt-8 mx-20 h-[1px] bg-active flex justify-center relative">
